@@ -1,0 +1,84 @@
+High level language
+Strongly typed language
+Object oriented
+Secure
+Platform independent
+Architecture neutral
+
+JDK -> Java Development Kit
+JRE -> Java Runtime Environment
+JVM -> Java Virtual Machine
+ |- JIT (Just in time) Compiler => Bytecode (.class)
+ |- Java interpreter
+
+Datatypes:
+1. primitive -> byte, int, char, float, double, short, long, boolean
+2. user defined / non - primitive -> enum, class, interface, arrays, collections
+
+OOP:
+Encapsulation ->
+Abstraction -> hiding what is unnecessary from the object
+1. variable & method level = private, public, protected and default (Access Specifiers)
+2. class
+3. interface
+
+
+Constructor
+-> special method for object creation
+-> 2 types:
+	1. default / no-args
+	2. parameterized 
+-> always public
+-> name is always class name
+-> does not have a return type (not even void)
+-> can be overloaded
+-> cannot be overridden
+-> belongs to the class only
+
+Flow Control Statements:
+1. Conditional = if - else -if
+2. Branching = switch case
+3. Iterative = for, while, do - while, for each
+for(initialization; condition; increment/decrement) {}
+
+4. Jump statements = break, continue
+
+Operators:
+1. based on operands
+	a. unary operators: ++ --
+	b. binary operators: + - * / % = == > < >= <= != && ||
+	c. ternary operators ?:
+		(condition) ? true : false
+2. based on functionality
+	a. arithmetic: ++ -- + - * / %
+	b. comparison: > < == >= <= !=
+	c. assignment: = += -= *= /= %=
+	d. relational: && || !
+	e. bitwise: & ^ |
+
+
+Arrays:
+-> elements of similar datatype stored continuesly in memory
+ex: int[] arr = new int[5];
+-> arrays are indexed or subscripted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
