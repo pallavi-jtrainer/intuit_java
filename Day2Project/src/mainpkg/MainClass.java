@@ -1,5 +1,7 @@
 package mainpkg;
 
+import exceptionspkg.ExceptionsDemo;
+import exceptionspkg.InvalidAgeException;
 import inheritance_pack.Address;
 import inheritance_pack.Employee;
 import inheritance_pack.FulltimeEmployee;
@@ -8,12 +10,31 @@ import nestedclassespkg.OuterClass;
 public class MainClass {
 
 	public static void main(String[] args) {
-		OuterClass outer = new OuterClass();
-		OuterClass.InnerClass inner = outer.new InnerClass();
-		inner.showVal();
+		ExceptionsDemo obj = new ExceptionsDemo();
+//		try {
+//			obj.divide(12, 0);
+//		} catch (ArithmeticException ex) {
+//			System.out.println(ex.getMessage());
+//		} catch(Exception e) {
+//			System.out.println(e.getMessage());
+//		}
 		
-		OuterClass.StaticInner s = new OuterClass.StaticInner();
-		s.showVal();
+		try {
+			obj.checkAge(17);
+		} catch(InvalidAgeException ex) {
+			System.out.println(ex.getMessage());
+		} catch(ClassNotFoundException ex) {
+			System.out.println(ex.getMessage());
+		}
+		
+		System.out.println("After exception");
+		
+//		OuterClass outer = new OuterClass();
+//		OuterClass.InnerClass inner = outer.new InnerClass();
+//		inner.showVal();
+//		
+//		OuterClass.StaticInner s = new OuterClass.StaticInner();
+//		s.showVal();
 		
 		
 //		FulltimeEmployee emp = new FulltimeEmployee();

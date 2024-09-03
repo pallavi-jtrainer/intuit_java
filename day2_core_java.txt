@@ -1,0 +1,101 @@
+Inheritance:
+When one class gives its attributes and behavior to another class
+extends -> used to inherit
+private variables and private methods don't get inherited
+inheritance is an IS-A relationship
+
+Types of inheritance:
+1. Single inheritance = base <- derived
+2. multi-level inheritance = base <- derived <- derived1
+3. multiple inheritance = not supported with classes
+4. Hybrid / diamond inheritance = not supported at all
+5. Hierarchical inheritance
+
+Composition is a HAS-A relationship
+---------------------
+Polymorphism:
+many forms
+
+1. Static / compile-time polymorphism -> overloading (happens within the same class)
+2. Dynamic / runtime polymorphism -> overriding (happens through inheritance)
+
+Overloading: a single method with same name but different signature (arguments)
+
+Overriding: the method name and signature should not be changed in the derived class
+
+------------------------------------
+Abstraction Level 2:
+Abstract classes -> class that cannot be instantiated
+use abstract keyword to create an abstract class
+abstract classes should be public
+can be used only if inherited
+
+Abstract methods:
+Can be inside an abstract class only
+must mandatorily be implemented in the derived class
+cannot have a body. only method declaration
+
+Abstraction Level 3:
+Interface -> fully abstract class
+methods in the interface are all abstract by default
+use interface keyword to create an interface
+you don't need the abstract keyword for an interface or its methods
+interfaces and their methods should be public
+interfaces cannot be instantiated
+use the implements keyword for inheritance
+
+--------------------------------------
+final -> creates constants (single assignment variables), readonly
+Anything final should not be abstract
+
+final variables: assign a value before using.
+1. declare and assign
+2. default constructor
+3. initialization block
+
+final methods: always concrete methods
+cannot be overridden
+can be overloaded
+
+final classes: are not abstract
+cannot be inherited
+can be used for composition
+--------------------------------
+static: single copy, shared copy
+belongs to a class (inside a class)
+
+static variables
+1. should be accessed using class name
+
+static methods
+1. methods which can access static class variables only
+2. should be accessed using class name
+
+static inner classes
+
+-----------------------------------
+Nested Classes
+class within a class
+
+1. Regular/concrete nested class
+2. static inner class / nested class
+3. anonymous class
+
+---------------------------------
+
+exceptions:
+1. checked exceptions / compile time
+2. unchecked exceptions / runtime time
+
+try
+catch
+finally
+throw
+throws
+
+Base class -> Exception
+java.lang package
+
+
+
+

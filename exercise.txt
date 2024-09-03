@@ -1,0 +1,8 @@
+Create an interface called Account. Three methods inside the interface:
+1. depositAmount(double amt)
+2. withdrawAmount(double amt)
+3. showBalance(int accountNumber)
+
+Create 2 classes - SavingsAccount and CurrentAccount which implement the Account interface.
+
+Please accept the customername and the account number with an initial balance from the user. Make this a menu based program. Create an array of accounts (separate for savings and current - 5 elements each)
