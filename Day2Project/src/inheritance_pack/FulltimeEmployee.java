@@ -14,5 +14,11 @@ public class FulltimeEmployee extends Employee {
 		System.out.println("Abstract method implementation in derived class");
 		
 	}
+	
+	public void myMethod() {
+		finalMethod();
+	}
+	
+	
 
 }

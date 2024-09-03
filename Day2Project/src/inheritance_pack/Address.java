@@ -1,6 +1,6 @@
 package inheritance_pack;
 
-public class Address {
+public final class Address {
 	private int doorNo;
 	private String street;
 	private String locality;

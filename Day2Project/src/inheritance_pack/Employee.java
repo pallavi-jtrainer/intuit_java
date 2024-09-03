@@ -6,6 +6,15 @@ public abstract class Employee {
 	private String empName;
 	private double salary;
 	private Address address;
+	private static String manager;
+	
+	public static String getManager() {
+		return manager;
+	}
+	
+	public static void setManager(String manager) {
+		Employee.manager = manager;
+	}
 	
 	public Address getAddress() {
 		return address;
@@ -64,8 +73,29 @@ public abstract class Employee {
 	
 	public void showEmployeeDetails() {
 		System.out.println("Id: " + employeeId + ", Name: " + empName
-				+ ", Salary: " + salary);
+				+ ", Salary: " + salary + ", Manager: " + manager);
 	}
 	
 	public abstract void sampleMethod();
+	
+	public void eatLunch() {
+		System.out.println("Eating lunch");
+	}
+	
+	public final void finalMethod() {
+		System.out.println("In Employee class");
+	}
+	
+	public final void finalMethod(String msg) {
+		System.out.println("Overloaded final method: " + msg);
+	}
+	
+	public static void staticMethod() {
+//		System.out.println(empName);
+		System.out.println(manager);
+	}
+	
+	public static void staticMethod(String msg) {
+		System.out.println("Overloaded static method: " + msg);
+	}
 }
