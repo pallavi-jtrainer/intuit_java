@@ -8,4 +8,11 @@ public class FulltimeEmployee extends Employee {
 		System.out.println("I am a full time employee.");
 		System.out.println("My address is: " + getAddress());
 	}
+
+	@Override
+	public void sampleMethod() {
+		System.out.println("Abstract method implementation in derived class");
+		
+	}
+
 }

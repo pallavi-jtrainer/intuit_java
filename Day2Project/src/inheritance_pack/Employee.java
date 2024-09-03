@@ -1,6 +1,6 @@
 package inheritance_pack;
 
-public class Employee {
+public abstract class Employee {
 
 	private int employeeId;
 	private String empName;
@@ -66,5 +66,6 @@ public class Employee {
 		System.out.println("Id: " + employeeId + ", Name: " + empName
 				+ ", Salary: " + salary);
 	}
-		
+	
+	public abstract void sampleMethod();
 }
