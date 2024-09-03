@@ -3,10 +3,19 @@ package mainpkg;
 import inheritance_pack.Address;
 import inheritance_pack.Employee;
 import inheritance_pack.FulltimeEmployee;
+import nestedclassespkg.OuterClass;
 
 public class MainClass {
 
 	public static void main(String[] args) {
+		OuterClass outer = new OuterClass();
+		OuterClass.InnerClass inner = outer.new InnerClass();
+		inner.showVal();
+		
+		OuterClass.StaticInner s = new OuterClass.StaticInner();
+		s.showVal();
+		
+		
 //		FulltimeEmployee emp = new FulltimeEmployee();
 //		emp.setEmployeeId(2);
 //		emp.setAddress(new Address(129, "1st cross", "jayanagar", "bangalore", "KA", 560011));
@@ -14,27 +23,27 @@ public class MainClass {
 //		emp.showEmployeeDetails();
 		
 		//Employee e = new Employee();
-		FulltimeEmployee e = new FulltimeEmployee();
-		e.setEmployeeId(1);
-		e.setEmpName("Something");
-		e.setSalary(6373.00);
-		
-		FulltimeEmployee.setManager("EmployeeX");
-		
-		e.showEmployeeDetails();
-		
-		
-		
-		FulltimeEmployee e1 = new FulltimeEmployee();
-		e1.setEmployeeId(1);
-		e1.setEmpName("Something");
-		e1.setSalary(6373.00);
-		e1.showEmployeeDetails();
-		
-		e1.setManager("Employee Z");
-		e.showEmployeeDetails();
-		
-		e1.showEmployeeDetails();
+//		FulltimeEmployee e = new FulltimeEmployee();
+//		e.setEmployeeId(1);
+//		e.setEmpName("Something");
+//		e.setSalary(6373.00);
+//		
+//		FulltimeEmployee.setManager("EmployeeX");
+//		
+//		e.showEmployeeDetails();
+//		
+//		
+//		
+//		FulltimeEmployee e1 = new FulltimeEmployee();
+//		e1.setEmployeeId(1);
+//		e1.setEmpName("Something");
+//		e1.setSalary(6373.00);
+//		e1.showEmployeeDetails();
+//		
+//		e1.setManager("Employee Z");
+//		e.showEmployeeDetails();
+//		
+//		e1.showEmployeeDetails();
 		
 		
 		//e.sampleMethod();
