@@ -1,0 +1,77 @@
+Functional Interface: an interface with only one abstract method. 
+Lamdba Expressions: are short hand implementation of the abstract method of a functional interface
+
+------------------------------
+Collections Framework
+is a collection of interfaces and classes that allow dynamic data storage
+Not permanent storages
+Do not work with primitive datatypes, work only with objects
+use wrapper classes to store primitive datatypes in collections
+
+Iterable (I)
+|- List (I)
+	|- ArrayList, Vector, Stack, LinkedList
+|- Map (I)
+	|- HashMap, TreeMAp
+|- Queue (I)
+	|- PriorityQueue, Dequeue
+|- Set (I)
+	|- HashSet, TreeSet
+|- Iterator
+	|- ListIterator
+
+
+int -> Integer
+char -> Character
+float -> Float
+double -> Double
+boolean -> Boolean
+byte -> Byte
+short -> Short
+long -> Long
+------------------------
+List:
+add
+addAll
+remove
+removeAll
+get
+set
+iterator
+listIterator
+-----------------------------------------
+
+File IO -> IO Stream
+	InputStream & OutputStream
+1. Byte Stream
+	FileReader, InputStreamReader
+	FileWriter, OutputStreamWriter
+2. Character Stream
+	Reader, BufferedReader
+	Writer, BufferedWriter
+
+All methods in File IO throw IOException (Checked Exception)
+java.io packages
+
+-----------------------------------------------
+India: 1,23,450.00
+Italy: 12.23.450,00
+US: 123,450.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
