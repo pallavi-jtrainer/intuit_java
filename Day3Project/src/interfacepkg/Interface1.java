@@ -18,5 +18,6 @@ public interface Interface1 {
 	}
 	
 	//abstract method in interface
-	public void myMethod();
+	public void myMethod(int a, int b);
+//	public void method2();
 }
