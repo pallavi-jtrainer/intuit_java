@@ -20,11 +20,13 @@ public class MainClass {
 //		}
 		
 		try {
-			obj.checkAge(17);
+			obj.checkAge(19);
 		} catch(InvalidAgeException ex) {
 			System.out.println(ex.getMessage());
 		} catch(ClassNotFoundException ex) {
 			System.out.println(ex.getMessage());
+		} finally {
+			System.out.println("Finally");
 		}
 		
 		System.out.println("After exception");
