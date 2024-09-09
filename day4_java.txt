@@ -1,0 +1,128 @@
+Archive files:
+1. jar -> java archive
+2. war -> web archive
+3. zip
+
+--------------------------------
+Strings
+Multithreading
+Maven
+Spring core
+
+-------------------------------------
+String:
+inbuilt class
+available under java.lang
+immutable
+
+methods:
+concat
+replace
+substring
+toLowerCase
+toUpperCase
+charAt
+split
+startsWith
+endsWith
+length
+equals
+compareTo
+---------------------------------------
+MultiThreading
+1. Thread class
+2. Runnable interface
+
+wait
+sleep
+
+notify
+notifyAll
+--
+
+Thread Lifecycle:
+create/new
+runnable
+start
+sleep/wait => InterrupedException
+notify
+resumes
+stop
+terminate
+-------------------------------------------------
+
+MAVEN:
+build tool
+provides a bootstrapped project
+created in java for java
+
+pom.xml => Project object model
+
+generate
+compile
+verify
+validate
+package
+deploy
+install
+
+Maven repositories
+1. local
+2. central
+3. remote
+
+2 types of project:
+1. console app: quickstart
+2. web app: webapp
+
+mvn archetype:generate -DgroupId=com.springpeople -DartifactId=DemoProject -DarchetypeId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+----------------------------------------
+Spring Framework
+1. Dependency Injection
+2. Inversion of Control (IoC) container
+
+IoC container: help to create and manage objects
+Responsibilities:
+1. instantating the objects (beans)
+2. wiring beans
+3. managing configurations
+4. manage the bean lifecycle
+
+types:
+1. BeanFactory
+2. ApplicationContext
+
+To convert a maven project to spring core:
+1. spring-context
+2. spring-beans
+3. spring-core
+
+Configuration files
+1. XML Config
+2. Annotation
+3. Java Config
+
+Steps for working with containers
+Step 1: Create the POJO classes
+Step 2: Create the config
+Step 3: Create the IoC Container
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
