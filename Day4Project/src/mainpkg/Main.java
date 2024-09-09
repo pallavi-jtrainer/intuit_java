@@ -19,43 +19,46 @@ public class Main {
 //		Thread t1 = new Thread(new Worker());
 //		Thread t2 = new Thread(new Worker());
 		
-		Thread t1 = new Thread(new Runnable() {
-			
-			@Override
-			public void run() {
-//				new Worker().process();
-				new Worker().stage1();
-				
-			}
-		});
-		
-		
-		Thread t2 = new Thread(new Runnable() {
-			
-			@Override
-			public void run() {
-//				new Worker().process();
-				new Worker().stage2();
-				
-			}
-		});
-		
+//		Thread t1 = new Thread(new Runnable() {
+//			
+//			@Override
+//			public void run() {
+////				new Worker().process();
+//				new Worker().stage1();
+//				
+//			}
+//		});
+//		
+//		
+//		Thread t2 = new Thread(new Runnable() {
+//			
+//			@Override
+//			public void run() {
+////				new Worker().process();
+//				new Worker().stage2();
+//				
+//			}
+//		});
+//		
 //		try {
 //			Thread.sleep(3000);
 //		}catch(InterruptedException e) {
 //			e.printStackTrace();
 //		}
-		
+//		
 		long start = System.currentTimeMillis();
 		
-		t1.start();
-		t2.start();
-		
+		Worker w = new Worker();
+		w.myMethod();
+//		
+//		t1.start();
+//		t2.start();
+//		
 		long end = System.currentTimeMillis();
 		
 		System.out.println("Time taken: " + (end - start));
-//		System.out.println("After thread completion");
-		
+////		System.out.println("After thread completion");
+//		
 	}
 
 }
