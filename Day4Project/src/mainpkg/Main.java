@@ -40,9 +40,20 @@ public class Main {
 			}
 		});
 		
+//		try {
+//			Thread.sleep(3000);
+//		}catch(InterruptedException e) {
+//			e.printStackTrace();
+//		}
+		
+		long start = System.currentTimeMillis();
+		
 		t1.start();
 		t2.start();
 		
+		long end = System.currentTimeMillis();
+		
+		System.out.println("Time taken: " + (end - start));
 //		System.out.println("After thread completion");
 		
 	}

@@ -38,7 +38,7 @@ public class Worker extends Thread {
 //		}
 //	}
 	
-	public void stage1() {
+	public synchronized void stage1() {
 		for(int i = 0; i < 10; i++) {
 			System.out.println("Thread name: " + Thread.currentThread().getName());
 			
@@ -54,7 +54,7 @@ public class Worker extends Thread {
 		}
 	}
 	
-	public void stage2() {
+	public synchronized void stage2() {
 		for(int i = 0; i < 10; i++) {
 			System.out.println("Thread name: " + Thread.currentThread().getName());
 			
@@ -69,5 +69,6 @@ public class Worker extends Thread {
 			System.out.println(count);
 		}
 	}
+	
 	
 }
