@@ -14,13 +14,13 @@
 		<constructor-arg name="studentId" value="1"></constructor-arg>
 		<constructor-arg name="name" value="Student 1"></constructor-arg>
 		<constructor-arg name="email" value="student1@ajaja"></constructor-arg>
-		<constructor-arg name="course" ref="course1"></constructor-arg>
-		<!-- <constructo-arg name="course">
+		<!-- <constructor-arg name="course" ref="course1"></constructor-arg> -->
+		<constructor-arg name="course">
 			<bean id="course1" class="com.springpeople.SpringCoreJavaConfigDemo.entity.Courses">
 				<property name="courseId" value="1"></property>
 				<property name="courseName" value="Core Java"></property>
 			</bean>
-		</constructor-arg> -->
+		</constructor-arg>
 	</bean>
 	
 	<!-- setter injection -->

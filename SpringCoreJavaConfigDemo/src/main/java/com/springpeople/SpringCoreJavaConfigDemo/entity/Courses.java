@@ -1,5 +1,8 @@
 package com.springpeople.SpringCoreJavaConfigDemo.entity;
 
+import org.springframework.stereotype.Component;
+
+//@Component
 public class Courses {
 	private int courseId;
 	private String courseName;
@@ -23,5 +26,12 @@ public class Courses {
 	@Override
 	public String toString() {
 		return "[courseId=" + courseId + ", courseName=" + courseName + "]";
+	}
+	
+	public Courses() {}
+
+	public Courses(int courseId, String courseName) {
+		this.courseId = courseId;
+		this.courseName = courseName;
 	}
 }
