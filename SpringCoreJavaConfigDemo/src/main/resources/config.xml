@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="course1" class="com.springpeople.SpringCoreJavaConfigDemo.entity.Courses">
+		<property name="courseId" value="1"></property>
+		<property name="courseName" value="Core Java"></property>
+	</bean>
+	
+	<bean id="s1" class="com.springpeople.SpringCoreJavaConfigDemo.entity.Student">
+		<constructor-arg name="studentId" value="1"></constructor-arg>
+		<constructor-arg name="name" value="Student 1"></constructor-arg>
+		<constructor-arg name="email" value="student1@ajaja"></constructor-arg>
+		<constructor-arg name="course" ref="course1"></constructor-arg>
+		<!-- <constructo-arg name="course">
+			<bean id="course1" class="com.springpeople.SpringCoreJavaConfigDemo.entity.Courses">
+				<property name="courseId" value="1"></property>
+				<property name="courseName" value="Core Java"></property>
+			</bean>
+		</constructor-arg> -->
+	</bean>
+	
+	<!-- setter injection -->
+<!-- 	<bean id="s1" class="com.springpeople.SpringCoreJavaConfigDemo.entity.Student">
+		<property name="studentId" value="1"></property>
+		<property name="name" value="Student 1"></property>
+		<property name="email" value="student1@aaba"></property>
+		<property name="course" ref="course1"></property>
+	</bean> -->
+</beans>
