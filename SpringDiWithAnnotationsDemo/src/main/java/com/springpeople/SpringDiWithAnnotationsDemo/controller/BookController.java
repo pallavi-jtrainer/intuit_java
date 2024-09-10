@@ -8,9 +8,12 @@ import com.springpeople.SpringDiWithAnnotationsDemo.entity.Book;
 @Component
 public class BookController {
 
-	@Autowired
+	//field level injection
+//	@Autowired
 	private Book book;
 	
+	//setter injection
+//	@Autowired
 	public void setBook(Book book) {
 		this.book = book;
 	}
@@ -23,7 +26,8 @@ public class BookController {
 		
 	}
 	
-//	@Autowired
+	//constructor injection
+	@Autowired
 	public BookController(Book book) {
 		this.book = book;
 	}

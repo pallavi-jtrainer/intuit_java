@@ -1,0 +1,40 @@
+IoC Container (ApplicationContext) has 5 implementations:
+1. ClassPathXmlApplicationContext
+2. AnnotationConfigApplicationContext
+3. XmlWebApplicationContext
+4. AnnotationConfigWebApplicationContext
+5. FileSystemXmlApplicationContext
+
+------------------------------------
+
+Dependency Injection(DI)
+3 ways:
+1. Field injection
+2. setter injection
+3. constructor injection
+
+-------------------
+
+Java Based and Annotation based Configuration
+@Component
+@Bean
+@ComponentScan
+@Configuration
+
+---------------
+Annotation based configurations
+@Required
+@Autowired
+@Qualifier
+@Resource
+@Primary
+
+
+
+
+
+
+
+
+
+
