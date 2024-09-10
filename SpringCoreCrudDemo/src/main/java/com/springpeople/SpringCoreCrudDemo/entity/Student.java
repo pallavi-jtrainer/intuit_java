@@ -1,5 +1,8 @@
 package com.springpeople.SpringCoreCrudDemo.entity;
 
+import org.springframework.stereotype.Component;
+
+//@Component
 public class Student {
 
 	private int studentId;
