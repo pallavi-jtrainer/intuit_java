@@ -1,0 +1,15 @@
+spring boot
+bootstrapping tool to create spring applications quickly and efficiently
+
+2 ways:
+1. Spring Starter Project in IDE
+2. Spring initializer (start.spring.io)
+
+Spring Data JPA
+JPA -> Java Persistence API
+CrudRepository (I)
+ |- JPARepository (I)
+ |- MongoRepository (I)
+
+public List<T> findAll(){} => select * from 
+---------------------------------------------
