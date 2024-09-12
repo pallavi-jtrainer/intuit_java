@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.springpeople.SpringBootDataJpaDemo.entity.Employee;
+import com.springpeople.SpringBootDataJpaDemo.exceptions.ResourceNotFoundException;
 import com.springpeople.SpringBootDataJpaDemo.service.EmployeeService;
 
 @RestController
@@ -32,7 +33,8 @@ public class EmployeeController {
 	
 	// /api/employees/1
 	@GetMapping("{id}")
-	public ResponseEntity<Employee> getEmployeeDetailsById(@PathVariable int id) {
+	public ResponseEntity<Employee> getEmployeeDetailsById(@PathVariable int id)
+			throws ResourceNotFoundException {
 		Employee e = service.getEmployeeDetailsbyId(id);
 		return new ResponseEntity<>(e, HttpStatus.OK);
 	}
