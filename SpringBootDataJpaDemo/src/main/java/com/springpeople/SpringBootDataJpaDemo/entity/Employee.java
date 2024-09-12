@@ -35,10 +35,14 @@ public class Employee {
 	@Column(name="dept_id")
 	private int deptId;
 	
+	@Column(name="salary")
+	private double salary;
+	
 	@Override
 	public String toString() {
 		return "Employee -> Id: " + empId + ", First Name: "
 				+ firstName + ", Last Name: " + lastName
-				+ ", Email: " + email + ", Department Id: " + deptId;
+				+ ", Email: " + email + ", Department Id: " + deptId
+				+ ", Salary: " + salary;
 	}
 }

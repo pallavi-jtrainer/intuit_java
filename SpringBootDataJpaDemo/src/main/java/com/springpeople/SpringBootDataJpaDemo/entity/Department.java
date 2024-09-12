@@ -24,6 +24,6 @@ public class Department {
 	@Column(name="dept_id")
 	private int deptId;
 	
-	@Column(name="dept_name")
+	@Column(name="dept_name", unique = true)
 	private String deptName;
 }
