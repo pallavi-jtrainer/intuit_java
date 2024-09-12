@@ -15,7 +15,8 @@ import jakarta.transaction.Transactional;
 public interface EmployeeRepository extends JpaRepository<Employee, Integer>{
 	public Employee findByEmpId(int id);
 	public Employee findByEmail(String email);
-	public List<Employee> findAllByDeptId(int id); 
+	public List<Employee> findAllByDeptId(int id);
+	
 	
 	@Modifying
 	@Transactional

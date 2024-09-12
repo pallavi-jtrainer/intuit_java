@@ -33,7 +33,20 @@ public class EmployeeService {
 		return eRepo.findAllByDeptId(id);
 	}
 	
-	public int updateEmployee(int id, int dept) {
-		return eRepo.updateDeptId(id, dept);
+//	public int updateEmployee(int id, int dept) {
+//		
+//		
+//		return eRepo.updateDeptId(id, dept);
+//	}
+	
+	public String updateEmployee(int id, int dept) {
+		String str = "Unable to update employee";
+		
+		int res = eRepo.updateDeptId(id, dept);
+		if(res > 0) {
+			str = "Employee updated";
+		}
+		
+		return str;
 	}
 }
