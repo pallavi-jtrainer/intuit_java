@@ -22,4 +22,10 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer>{
 	@Transactional
 	@Query("UPDATE Employee e set e.deptId = ?2 where e.empId = ?1")
 	public int updateDeptId(int id, int dept);
+	
+	//returns the last record
+	@Query("select e from Employee e Order By e.empId desc limit 1")
+	public Employee findLastEmployee();
+	
+	public Employee findTopByOrderByEmpIdDesc();
 }

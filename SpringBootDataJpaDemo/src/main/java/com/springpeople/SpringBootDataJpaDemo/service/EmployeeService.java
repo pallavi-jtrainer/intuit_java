@@ -26,6 +26,13 @@ public class EmployeeService {
 	}
 	
 	public Employee createNewEmployee(Employee e) {
+		int id = 1;
+		Employee emp = eRepo.findTopByOrderByEmpIdDesc();
+		if(emp != null) {
+			id = emp.getEmpId() + 1;
+			
+		} 
+		e.setEmpId(id);
 		return eRepo.save(e);
 	}
 	
