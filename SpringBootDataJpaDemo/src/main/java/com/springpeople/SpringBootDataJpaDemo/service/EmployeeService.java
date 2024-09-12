@@ -63,4 +63,14 @@ public class EmployeeService {
 		
 		return str;
 	}
+	
+	public List<Employee> getAllEmployeesWithSalaryBetween(double min, double max) {
+		return eRepo.findAllBySalaryBetween(min, max);
+	}
+	
+	public String getEmployeeCountByDept(int id) {
+		String str = "Employee count: ";
+		int count = eRepo.countByDeptId(id);
+		return str + count + " for department id: " + id;
+	}
 }
