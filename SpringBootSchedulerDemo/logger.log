@@ -1,0 +1,9 @@
+2024-09-20T15:09:20.916+05:30  INFO 21748 --- [SpringBootSchedulerDemo] [main] c.s.S.SpringBootSchedulerDemoApplication : Starting SpringBootSchedulerDemoApplication using Java 17.0.9 with PID 21748 (E:\training\intuit\jfs_training_2toSep24\spring_workspace\SpringBootSchedulerDemo\target\classes started by Pallavi Prasad in E:\training\intuit\jfs_training_2toSep24\spring_workspace\SpringBootSchedulerDemo)
+2024-09-20T15:09:20.918+05:30  INFO 21748 --- [SpringBootSchedulerDemo] [main] c.s.S.SpringBootSchedulerDemoApplication : No active profile set, falling back to 1 default profile: "default"
+2024-09-20T15:09:21.354+05:30  INFO 21748 --- [SpringBootSchedulerDemo] [main] c.s.S.SpringBootSchedulerDemoApplication : Started SpringBootSchedulerDemoApplication in 0.748 seconds (process running for 1.147)
+2024-09-20T15:09:21.359+05:30  INFO 21748 --- [SpringBootSchedulerDemo] [scheduling-1] c.s.S.schedulingtasks.Tasks              : The time now is 15:09:21
+2024-09-20T15:09:26.362+05:30  INFO 21748 --- [SpringBootSchedulerDemo] [scheduling-1] c.s.S.schedulingtasks.Tasks              : The time now is 15:09:26
+2024-09-20T15:09:31.371+05:30  INFO 21748 --- [SpringBootSchedulerDemo] [scheduling-1] c.s.S.schedulingtasks.Tasks              : The time now is 15:09:31
+2024-09-20T15:09:36.385+05:30  INFO 21748 --- [SpringBootSchedulerDemo] [scheduling-1] c.s.S.schedulingtasks.Tasks              : The time now is 15:09:36
+2024-09-20T15:09:41.386+05:30  INFO 21748 --- [SpringBootSchedulerDemo] [scheduling-1] c.s.S.schedulingtasks.Tasks              : The time now is 15:09:41
+2024-09-20T15:09:44.531+05:30  INFO 21748 --- [SpringBootSchedulerDemo] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
