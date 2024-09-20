@@ -1,0 +1,21 @@
+Thread Synchronization:
+1. Inter - thread communication
+wait()
+notify()
+notifyAll()
+
+These methods belong to the Object class
+
+
+2. mutual exclusive :- ensures that threads do not interfere with each other when sharing a resource.
+   a. synchronized method
+   b. synchronized block
+   c. static synchronization
+
+DeadLock -> a situation that occurs when 2 threads share the same resource
+
+Avoid deadlocks by:
+1. Use Thread.join()
+2. Avoid nested Locks and nested code
+3. avoid unnecessary locks and access
+ 

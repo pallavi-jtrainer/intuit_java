@@ -13,18 +13,28 @@ public class SpringBootMultithreadingProjectApplication {
 		
 		Thread t1 = new Thread() {
 			public void run() {
-				obj.printData(4);
+//				obj.printData(12);
+				WorkerThread.printData(12);
 			}
 		};
 		
 		Thread t2 = new Thread() {
 			public void run() {
-				obj.printData(10);
+//				obj.printData(10);
+				WorkerThread.printData(10);
+			}
+		};
+		
+		Thread t3 = new Thread() {
+			public void run() {
+//				obj.printData(10);
+				WorkerThread.printData(10);
 			}
 		};
 		
 		t1.start();
 		t2.start();
+		t3.start();
 				
 	}
 
