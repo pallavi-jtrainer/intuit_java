@@ -1,0 +1,17 @@
+2024-09-20T14:39:01.801+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] c.s.S.SpringBootAsyncDemoApplication     : Starting SpringBootAsyncDemoApplication using Java 17.0.9 with PID 12196 (E:\training\intuit\jfs_training_2toSep24\spring_workspace\SpringBootAsyncDemo\target\classes started by Pallavi Prasad in E:\training\intuit\jfs_training_2toSep24\spring_workspace\SpringBootAsyncDemo)
+2024-09-20T14:39:01.803+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] c.s.S.SpringBootAsyncDemoApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-20T14:39:02.517+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-20T14:39:02.530+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-20T14:39:02.530+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-20T14:39:02.574+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-20T14:39:02.574+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 722 ms
+2024-09-20T14:39:02.879+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-20T14:39:02.887+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] c.s.S.SpringBootAsyncDemoApplication     : Started SpringBootAsyncDemoApplication in 1.433 seconds (process running for 1.832)
+2024-09-20T14:39:02.893+05:30  INFO 12196 --- [SpringBootAsyncDemo] [async-2] c.s.S.service.MovieService               : Looking up movie with id: 58611129-2dbc-4a81-a72f-77ddfc1b1b49
+2024-09-20T14:39:02.893+05:30  INFO 12196 --- [SpringBootAsyncDemo] [async-1] c.s.S.service.MovieService               : Looking up movie with id: 2baf70d1-42bb-4437-b551-e5fed5a87abe
+2024-09-20T14:39:04.491+05:30  INFO 12196 --- [SpringBootAsyncDemo] [async-1] c.s.S.service.MovieService               : Looking up movie with id: 0440483e-ca0e-4120-8c50-4c8cd9b965d6
+2024-09-20T14:39:05.742+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] c.s.S.ApplicationRunner                  : Elasped Time: 2852
+2024-09-20T14:39:05.743+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] c.s.S.ApplicationRunner                  : --> Movie: [ Title: Castle in the Sky, Producer: Isao Takahata, Director: Hayao Miyazaki ]
+2024-09-20T14:39:05.744+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] c.s.S.ApplicationRunner                  : --> Movie: [ Title: My Neighbor Totoro, Producer: Hayao Miyazaki, Director: Hayao Miyazaki ]
+2024-09-20T14:39:05.747+05:30  INFO 12196 --- [SpringBootAsyncDemo] [main] c.s.S.ApplicationRunner                  : --> Movie: [ Title: Princess Mononoke, Producer: Toshio Suzuki, Director: Hayao Miyazaki ]
+2024-09-20T14:39:10.513+05:30  INFO 12196 --- [SpringBootAsyncDemo] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
