@@ -18,4 +18,68 @@ Avoid deadlocks by:
 1. Use Thread.join()
 2. Avoid nested Locks and nested code
 3. avoid unnecessary locks and access
+------------------------------------------------------------
+
+Concurrency issues:
+1. visibility
+2. access
+
+------------------------------------------------------
+Thread Pool
+ - a pool of worker threads.
+ - contains a work queue which holds the tasks to be processed
+ - threads implement the Runnable interface
+ - 
+
+Executor Framework
+ - java.util.concurrent
+ - introduced in Java 5
+
+ - 3 interfaces:
+   a. Executor
+   b. ExecutorService
+   c. ScheduledExecutorService
+
+ExecutorService
+1. invokeAll
+2. invokeAny
+3. submit
+4. shutdownNow
+5. shutdown
+
+----------------------------
+Async processing 
+@Async
+ - must be applied to public methods
+ - does not work if method is called in the same
+
+@EnableAsync
+ - detect the @Async
+ - indicate the type of advice
+ - sets the order of processing
+
+CompletableFuture:
+ - class in java.util.concurrent
+ - used in Async programming
+ - implements CompletionStage and Future
+ - supplyAsync()
+ - join()
+------------------------------------------------------
+
+Spring Scheduler - schedule tasks
+1. @Async
+2. @EnableAsync
+3. @Scheduled
+4. @EnableScheduling
+5. @Schedules
+
+
+
+
+
+
+
+
+
+
  
