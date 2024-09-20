@@ -16,25 +16,38 @@ public class SpringBootInterThreadCommunication1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootInterThreadCommunication1Application.class, args);
 	
-		SharedResource resource = new SharedResource();
+		//SharedResource resource = new SharedResource();
 		int nThreads = 5;
 		
 		ExecutorService service = Executors.newFixedThreadPool(nThreads);
 		
-		for(int i = 0; i < nThreads; i++) {
-			Runnable worker = new WorkerThread(resource);
+		for(int i = 0; i <nThreads; i++) {
+			Runnable worker = new WorkerThread("" + i);
 			service.execute(worker);
 		}
 		
 		service.shutdown();
 		
-		try {
-			service.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
-		} catch (InterruptedException e) {
-			System.out.println(e.getMessage());
+		while(!service.isTerminated()) {
+			//System.out.println("thread terminated");
 		}
 		
-		System.out.println("Counter: " + resource.getCounter());
+		System.out.println("All threads executed");
+		
+//		for(int i = 0; i < nThreads; i++) {
+//			Runnable worker = new WorkerThread(resource);
+//			service.execute(worker);
+//		}
+//		
+//		service.shutdown();
+//		
+//		try {
+//			service.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
+//		} catch (InterruptedException e) {
+//			System.out.println(e.getMessage());
+//		}
+//		
+//		System.out.println("Counter: " + resource.getCounter());
 	}
 
 }
