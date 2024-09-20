@@ -4,17 +4,25 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
+//import lombok.ToString;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+//@ToString
 public class Employee {
 	private int emp_id;
 	private String first_name;
 	private String last_name;
 	private String email;
 	private int dept_id;
+	
+	@Override
+	public String toString() {
+		return "Employee Details -> Id = " 
+				+ emp_id + ", First Name = " + first_name
+				+ ", Last Name = " + last_name + ", Email = "
+				+ email + ", Department Id = " + dept_id;
+	}
 }

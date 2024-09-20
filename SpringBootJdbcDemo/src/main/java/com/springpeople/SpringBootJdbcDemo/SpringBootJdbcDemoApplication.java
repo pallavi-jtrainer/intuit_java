@@ -23,7 +23,12 @@ public class SpringBootJdbcDemoApplication implements CommandLineRunner{
 			System.out.println("1. View All Employees");
 			System.out.println("2. View Employee Details");
 			System.out.println("3. Add New Employee");
-			System.out.println("4. Exit");
+			System.out.println("4. Update Employee Details");
+			System.out.println("5. Delete Employee");
+			System.out.println("6. View All Departments");
+			System.out.println("7. View Department Details");
+			System.out.println("8. View Employees based on Department");
+			System.out.println("9. Exit");
 			System.out.println("Enter choice: ");
 			int ch = sc.nextInt();
 			
@@ -61,7 +66,7 @@ public class SpringBootJdbcDemoApplication implements CommandLineRunner{
 					System.out.println("Insertion failed");
 				}
 				break;
-			case 4:
+			case 9:
 				System.out.println("Exiting");
 				System.exit(0);
 			default: 

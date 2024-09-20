@@ -30,7 +30,9 @@ public class StudentRepository {
 	}
 	
 	public int updateEmail(int id, String newEmail) {
-		return jdbcTemplate.update("update student set email = " + newEmail + " where studentid = " + id);
+//		return jdbcTemplate.update("update student set email = '" + newEmail + "' where studentid = " + id);
+		
+		return jdbcTemplate.update("update student set email = ? where studentid = ?", newEmail, id);
 	}
 	
 	public int deleteStudent(int id) {

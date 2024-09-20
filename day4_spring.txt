@@ -1,0 +1,34 @@
+JPA -> Jakarta Persistence API (formerly Java Persistence API)
+ -> helps persist data in a database
+ -> works with Relational Database
+
+JPA features:
+1. ORM Tool
+2. database agnostic
+3. Can create queries dynamically based on method name
+4. cross - platform
+
+firstName => first_name
+
+----------------------------------------------
+
+Spring web => Serves REST Api
+
+REST -> Representational State Transfer
+
+Web Service -> bridge that connects 2 independent technologies for transfer of data.
+1. SOAP - Simple Object Access Protocol 
+2. REST - Representational State Transfer
+
+HTTP methods:
+GET, PUT, POST, DELETE, PATCH
+
+
+---------------------------------------------------------------
+POST REQUEST
+1. Headers
+2. Body -> Payload
+3. Footer
+
+
+

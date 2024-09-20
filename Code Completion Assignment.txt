@@ -1,0 +1,3 @@
+Spring Completion Assignment.
+
+A Spring boot Project was created today with the name SpringBootJpaMappingDemo. Please complete the project by adding the repositories, services and controllers for the entity classes in the project.

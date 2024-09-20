@@ -20,8 +20,15 @@ public class SpringBootJdbcProjectApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		Student s = repo.getStudentDetails(3);
-		System.out.println(s.toString());
+		int res = repo.updateEmail(2, "pspsp@jjj");
+		if(res > 0) {
+			System.out.println("Email updated");
+		} else {
+			System.out.println("Update failed");
+		}
+		
+//		Student s = repo.getStudentDetails(3);
+//		System.out.println(s.toString());
 			
 //		int res = repo.insertStudent(new Student(4, "Student4", "sjsjs@ajja"));
 //		if(res > 0) {
